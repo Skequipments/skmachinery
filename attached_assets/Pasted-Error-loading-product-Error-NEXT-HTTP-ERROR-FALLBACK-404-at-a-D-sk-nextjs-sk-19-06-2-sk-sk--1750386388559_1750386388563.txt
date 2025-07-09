@@ -1,0 +1,95 @@
+Error loading product: Error: NEXT_HTTP_ERROR_FALLBACK;404
+    at a (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\app\product\[slug]\page.js:5:527)
+    at b (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\app\product\[slug]\page.js:5:11426) {
+  digest: 'NEXT_HTTP_ERROR_FALLBACK;404'
+}
+Error fetching product by slug: Error: Dynamic server usage: Route /product/[slug] couldn't be rendered statically because it used revalidate: 0 fetch http://localhost:3000//api/products?includeDescription=true /product/[slug]. See more info here: https://nextjs.org/docs/messages/dynamic-server-error     
+    at g (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:19:9981)
+    at <unknown> (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:1:17315)
+    at <unknown> (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:19:4491)
+    at a.with (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:11256)
+    at u.with (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:5503)
+    at u.startActiveSpan (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:20469)
+    at a.startActiveSpan (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:21003)
+    at <unknown> (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:19:3999)
+    at a.with (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:11256)
+    at u.with (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:5503) {
+  description: "Route /product/[slug] couldn't be rendered statically because it used revalidate: 0 fetch http://localhost:3000//api/products?includeDescription=true /product/[slug]. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Error loading product: Error: NEXT_HTTP_ERROR_FALLBACK;404
+    at a (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\app\product\[slug]\page.js:5:527)
+    at b (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\app\product\[slug]\page.js:5:11426) {
+  digest: 'NEXT_HTTP_ERROR_FALLBACK;404'
+}
+Error fetching product by slug: Error: Dynamic server usage: Route /product/[slug] couldn't be rendered statically because it used revalidate: 0 fetch http://localhost:3000//api/products?includeDescription=true /product/[slug]. See more info here: https://nextjs.org/docs/messages/dynamic-server-error     
+    at g (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:19:9981)
+    at <unknown> (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:1:17315)
+    at <unknown> (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:19:4491)
+    at a.with (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:11256)
+    at u.with (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:5503)
+    at u.startActiveSpan (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:20469)
+    at a.startActiveSpan (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:21003)
+    at <unknown> (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:19:3999)
+    at a.with (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:11256)
+    at u.with (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:5503) {
+  description: "Route /product/[slug] couldn't be rendered statically because it used revalidate: 0 fetch http://localhost:3000//api/products?includeDescription=true /product/[slug]. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Error loading product: Error: NEXT_HTTP_ERROR_FALLBACK;404
+    at a (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\app\product\[slug]\page.js:5:527)
+    at b (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\app\product\[slug]\page.js:5:11426) {
+  digest: 'NEXT_HTTP_ERROR_FALLBACK;404'
+}
+Error fetching product by slug: Error: Dynamic server usage: Route /product/[slug] couldn't be rendered statically because it used revalidate: 0 fetch http://localhost:3000//api/products?includeDescription=true /product/[slug]. See more info here: https://nextjs.org/docs/messages/dynamic-server-error     
+    at g (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:19:9981)
+    at <unknown> (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:1:17315)
+    at <unknown> (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:19:4491)
+    at a.with (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:11256)
+    at u.with (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:5503)
+    at u.startActiveSpan (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:20469)
+    at a.startActiveSpan (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:21003)
+    at <unknown> (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:19:3999)
+    at a.with (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:11256)
+    at u.with (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:5503) {
+  description: "Route /product/[slug] couldn't be rendered statically because it used revalidate: 0 fetch http://localhost:3000//api/products?includeDescription=true /product/[slug]. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Error loading product: Error: NEXT_HTTP_ERROR_FALLBACK;404
+    at a (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\app\product\[slug]\page.js:5:527)
+    at b (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\app\product\[slug]\page.js:5:11426) {
+  digest: 'NEXT_HTTP_ERROR_FALLBACK;404'
+}
+Error fetching product by slug: Error: Dynamic server usage: Route /product/[slug] couldn't be rendered statically because it used revalidate: 0 fetch http://localhost:3000//api/products?includeDescription=true /product/[slug]. See more info here: https://nextjs.org/docs/messages/dynamic-server-error     
+    at g (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:19:9981)
+    at <unknown> (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:1:17315)
+    at <unknown> (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:19:4491)
+    at a.with (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:11256)
+    at u.with (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:5503)
+    at u.startActiveSpan (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:20469)
+    at a.startActiveSpan (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:21003)
+    at <unknown> (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:19:3999)
+    at a.with (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:11256)
+    at u.with (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\447.js:20:5503) {
+  description: "Route /product/[slug] couldn't be rendered statically because it used revalidate: 0 fetch http://localhost:3000//api/products?includeDescription=true /product/[slug]. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+Error loading product: Error: NEXT_HTTP_ERROR_FALLBACK;404
+    at a (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\app\product\[slug]\page.js:5:527)
+    at b (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\app\product\[slug]\page.js:5:11426) {
+  digest: 'NEXT_HTTP_ERROR_FALLBACK;404'
+}
+ ⨯ useSearchParams() should be wrapped in a suspense boundary at page "/category/[slug]". Read more: https://nextjs.org/docs/messages/missing-suspense-with-csr-bailout
+    at a (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\905.js:3:12397)
+    at f (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\chunks\905.js:5:28704)
+    at g (D:\sk-nextjs\sk 19-06 2\sk\sk\.next\server\app\category\[slug]\page.js:1:3207)
+    at nF (D:\sk-nextjs\sk 19-06 2\sk\sk\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:76:46843)
+    at nH (D:\sk-nextjs\sk 19-06 2\sk\sk\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:76:48618)
+    at nW (D:\sk-nextjs\sk 19-06 2\sk\sk\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:76:67762)
+    at nz (D:\sk-nextjs\sk 19-06 2\sk\sk\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:76:65337)
+    at nB (D:\sk-nextjs\sk 19-06 2\sk\sk\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:76:47195)
+    at nH (D:\sk-nextjs\sk 19-06 2\sk\sk\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:76:48664)
+    at nH (D:\sk-nextjs\sk 19-06 2\sk\sk\node_modules\next\dist\compiled\next-server\app-page.runtime.prod.js:76:64688)
+Error occurred prerendering page "/category/textile-testing-equipment". Read more: https://nextjs.org/docs/messages/prerender-error
+Export encountered an error on /category/[slug]/page: /category/textile-testing-equipment, exiting the build.
+ ⨯ Next.js build worker exited with code: 1 and signal: null

@@ -1,0 +1,74 @@
+# Node dependencies
+node_modules/
+package-lock.json
+yarn.lock
+.pnpm-debug.log*
+
+# Build outputs
+.next/
+out/
+build/
+
+# Environment variables
+.env
+.env.*          # exclude all env files like .env.local, .env.production
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS-specific files
+*.swp
+*.swo
+
+# TypeScript build info
+*.tsbuildinfo
+next-env.d.ts
+
+# Vercel
+.vercel/
+
+# Coverage reports
+coverage/
+
+# PnP
+.pnp/
+.pnp.* 
+
+# Yarn offline mirror cache (keep useful folders only)
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Optional: GitHub-specific files
+*.pem
+
+# Optional: macOS folder metadata
+.AppleDouble
+.LSOverride
+
+# Optional: files larger than 100MB (safety catch, won't block Git push but good reminder)
+*.iso
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.exe
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.psd
+*.ai
+*.sketch

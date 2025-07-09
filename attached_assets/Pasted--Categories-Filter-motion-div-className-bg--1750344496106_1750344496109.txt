@@ -1,0 +1,108 @@
+
+              {/* Categories Filter */}
+              <motion.div
+                className="bg-white p-4 rounded-lg shadow"
+                whileHover={{ scale: 1.02 }}
+              >
+                <h2 className="text-lg font-semibold mb-4">Categories</h2>
+                {loadingCategories ? (
+                  <div className="space-y-2">
+                    {[1, 2, 3].map((_, index) => (
+                      <Skeleton key={index} className="h-10 w-full" />
+                    ))}
+                  </div>
+                ) : (
+                  <ul className="space-y-2">
+                    {categories.map((category) => {
+                      const hasSubcategories = subcategoriesByCategory[category.title]?.length > 0;
+                      const isExpanded = expandedCategories[category.title] || false;
+                      const isActive = categoryName.toLowerCase() === category.title.toLowerCase();
+
+                      return (
+                        <motion.li
+                          key={category._id}
+                          className="space-y-1 border-b border-gray-200 last:border-b-0"
+                        >
+                          <div className="flex items-center justify-between">
+                            <Link
+                              href={`/category/${category.title.toLowerCase().replace(/\s+/g, '-')}`}
+                              className={`block p-2 rounded flex-1 ${
+                                isActive 
+                                  ? 'text-blue-600 font-medium ' 
+                                  : 'hover:bg-gray-100'
+                              }`}
+                              onClick={(e) => {
+                                e.preventDefault();
+                                handleCategoryClick(category.title.toLowerCase().replace(/\s+/g, '-'));
+                              }}
+                            >
+                              <div className="flex items-center gap-2">
+                                {/* {category.image && (
+                                  <Image
+                                    src={category.image}
+                                    alt={category.title}
+                                    width={24}
+                                    height={24}
+                                    className="object-contain"
+                                  />
+                                )} */}
+                                <span>{category.title}</span>
+                              </div>
+                            </Link>
+
+                            {hasSubcategories && (
+                              <button
+                                onClick={() => toggleCategoryExpansion(category.title)}
+                                className="p-2 rounded hover:bg-gray-100 "
+                              >
+                                {isExpanded ? (
+                                  <ChevronDown className="w-4 h-4" />
+                                ) : (
+                                  <ChevronRight className="w-4 h-4" />
+                                )}
+                              </button>
+                            )}
+                          </div>
+
+                          <AnimatePresence>
+                            {hasSubcategories && isExpanded && (
+                              <motion.ul
+                                initial={{ opacity: 0, height: 0 }}
+                                animate={{ opacity: 1, height: 'auto' }}
+                                exit={{ opacity: 0, height: 0 }}
+                                transition={{ duration: 0.2 }}
+                                className="pl-4 space-y-1"
+                              >
+                                {subcategoriesByCategory[category.title]?.map((subcat) => (
+                                  <motion.li
+                                    key={subcat._id}
+                                    whileHover={{ x: 5 }}
+                                  >
+                                    <div
+                                      className={`block p-2 rounded cursor-pointer text-sm bg-gray-50 mb-2 ${
+                                        isSubcategorySelected(subcat.slug)
+                                          ? 'text-blue-500 text-sm bg-gray-50' 
+                                          : 'hover:bg-gray-100'
+                                      }`}
+                                      onClick={() => handleSubcategoryClick(subcat)}
+                                    >
+                                      <span className="flex items-center gap-2">
+                                        {subcat.title}
+                                        {/* <span className="text-sm text-gray-500">
+                                          ({filteredProducts.filter(p => 
+                                            p.subCategory?.toLowerCase() === subcat.title.toLowerCase()
+                                          ).length})
+                                        </span> */}
+                                      </span>
+                                    </div>
+                                  </motion.li>
+                                ))}
+                              </motion.ul>
+                            )}
+                          </AnimatePresence>
+                        </motion.li>
+                      );
+                    })}
+                  </ul>
+                )}
+              </motion.div>
