@@ -1,4 +1,4 @@
-name: Deploy Next.js App to EC2
+name: Auto Deploy on Push to EC2
 
 on:
   push:
@@ -21,8 +21,8 @@ jobs:
       - name: Deploy to EC2
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@56.228.32.158 << 'EOF'
-            cd /home/ubuntu/sk1/skmachinery
-            git pull origin main
+            cd /home/ubuntu/sk1/skmachinery   # ✅ Your correct folder
+            git pull origin main              # ✅ Pull new changes
             npm install
             npm run build
             pm2 restart ecosystem.config.cjs || pm2 start ecosystem.config.cjs
