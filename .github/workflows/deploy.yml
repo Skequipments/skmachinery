@@ -1,0 +1,29 @@
+name: Deploy Next.js App to EC2
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.5.4
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      - name: Deploy to EC2
+        run: |
+          ssh -o StrictHostKeyChecking=no ubuntu@56.228.32.158 << 'EOF'
+            cd /home/ubuntu/sk1/skmachinery
+            git pull origin main
+            npm install
+            npm run build
+            pm2 restart ecosystem.config.cjs || pm2 start ecosystem.config.cjs
+          EOF
