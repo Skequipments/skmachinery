@@ -1,4 +1,4 @@
-name: Auto Deploy on Push to EC2
+name: Auto Deploy to EC2
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Setup SSH
+      - name: Setup SSH Agent
         uses: webfactory/ssh-agent@v0.5.4
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
@@ -21,8 +21,10 @@ jobs:
       - name: Deploy to EC2
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@56.228.32.158 << 'EOF'
-            cd /home/ubuntu/sk1/skmachinery   # ✅ Your correct folder
-            git pull origin main              # ✅ Pull new changes
+            echo "✅ Connected to EC2"
+            cd /home/ubuntu/sk1/skmachinery
+            git pull origin main
+            echo "✅ Pulled latest code"
             npm install
             npm run build
             pm2 restart ecosystem.config.cjs || pm2 start ecosystem.config.cjs
