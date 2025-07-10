@@ -7,7 +7,7 @@ import { useRouter } from 'next/navigation'
 import { PhoneCall, Mail, ChevronDown, Search, User, ShoppingCart, X, ChevronRight } from 'lucide-react'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, Variants } from 'framer-motion'
 import { Product, fetchProducts } from "@/data/products";
 import { SubCategory, fetchSubCategories } from "@/data/subcategories";
 import { Category, fetchCategories } from "@/data/categories";
@@ -143,7 +143,7 @@ export default function Header() {
   };
 
   // Animation variants
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -153,19 +153,19 @@ export default function Header() {
     }
   }
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { y: -10, opacity: 0 },
     visible: {
       y: 0,
       opacity: 1,
       transition: {
         duration: 0.3,
-        ease: "easeOut"
+        ease: [0.4, 0, 0.2, 1] // Correct easing function format
       }
     }
   }
 
-  const dropdownVariants = {
+  const dropdownVariants: Variants = {
     hidden: {
       opacity: 0,
       y: -10,
@@ -178,7 +178,7 @@ export default function Header() {
       y: 0,
       transition: {
         duration: 0.2,
-        ease: "easeOut"
+        ease: [0.4, 0, 0.2, 1] // Correct easing function format
       }
     }
   }
@@ -292,7 +292,6 @@ export default function Header() {
             <motion.div variants={itemVariants} className="flex items-center gap-2">
               <PhoneCall size={16} />
               <span>+919818900247</span>
-              {/* <span className="hidden sm:inline">, +919818900247</span> */}
             </motion.div>
             <motion.div variants={itemVariants} className="hidden sm:flex items-center gap-2">
               <Mail size={16} />
@@ -560,7 +559,6 @@ export default function Header() {
                               exit={{ opacity: 0, x: -10 }}
                             >
                               <div className="p-2">
-                                {/* <h3 className="px-4 py-2 font-medium text-gray-700">Subcategories</h3> */}
                                 <ul className="py-1">
                                   {getSubCategories(category.name).map((subCat, idx) => (
                                     <motion.li
@@ -571,7 +569,7 @@ export default function Header() {
                                     >
                                       <button
                                         onClick={() => handleCategoryClick(subCat.slug, category.name)}
-                                        className="w-full px-4 py-2 text-left hover:text-blue-500 text-sm hover:bg-gray-100 rounded-md  "
+                                        className="w-full px-4 py-2 text-left hover:text-blue-500 text-sm hover:bg-gray-100 rounded-md"
                                       >
                                         {subCat.name}
                                       </button>
