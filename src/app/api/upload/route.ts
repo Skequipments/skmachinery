@@ -8,12 +8,22 @@ interface CloudinaryUploadResult {
 }
 
 // Configure cloudinary directly in the route
+// cloudinary.config({
+//   cloud_name: 'rohitkrsah',
+//   api_key: '225697353752836',
+//   api_secret: '8qyNVb_MFlOqwYmlUeL4tvIe1m0',
+//   secure: true
+// });
+
+//Configure cloudinary directly in the route
 cloudinary.config({
-  cloud_name: 'rohitkrsah',
-  api_key: '225697353752836',
-  api_secret: '8qyNVb_MFlOqwYmlUeL4tvIe1m0',
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME!,
+  api_key: process.env.CLOUDINARY_API_KEY!,
+  api_secret: process.env.CLOUDINARY_API_SECRET!,
   secure: true
 });
+
+
 
 export async function POST(request: NextRequest) {
   try {
