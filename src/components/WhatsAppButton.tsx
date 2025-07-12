@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 
 export default function WhatsAppButton({ product }: { product: { title: string; price: number } }) {
   const handleWhatsAppOrder = () => {
-    const phoneNumber = '9383002793';
+    const phoneNumber = '9818900247';
     const message = `Hi, I want to order this product:\n\n*${product.title}*\n\n Product URL: ${window.location.href}`;
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;

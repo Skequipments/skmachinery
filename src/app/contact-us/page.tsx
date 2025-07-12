@@ -182,9 +182,9 @@ const ContactUs: NextPage = () => {
                       Address
                     </h3>
                     <p className="mt-1 text-sm">
-                      No. C - 305, Sector - 10,<br />
-                      Noida - 201 301,<br />
-                      Uttar Pradesh, India
+                      D-50 1st Floor Sector-10,<br/>
+                      Noida, Gautam Buddha Nagar-201301,<br/>
+                      Uttar Pradesh, India  
                     </p>
                   </div>
                 </div>
@@ -217,7 +217,7 @@ const ContactUs: NextPage = () => {
                       Phone
                     </h3>
                     <p className="mt-1 text-sm">
-                      +91 1234567890
+                      +91 9818900247
                     </p>
                   </div>
                 </div>
